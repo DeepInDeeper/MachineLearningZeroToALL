@@ -61,3 +61,167 @@ requirement：
     * 9.1 [笔记](9-NaiveBayer/note)
         * 9.1.1 [LSJU-生成学习算法、高斯判别分布、朴素贝叶斯算法](9-NaiveBayer/note/LSJU-chapter05.ipynb)
 
+
+[收藏！机器学习算法优缺点综述][Title-6] + 七月在线实验室  
+![img-06-01][img-06-01]
+* 正则化算法（Regularization Algorithms）
+    * 例子
+        * 岭回归（Ridge Regression）
+        * 最小绝对收缩与选择算子（LASSO）
+        * GLASSO
+        * 弹性网络（Elastic Net）
+        * 最小角回归（Least-Angle Regression）
+    * 优点
+        * 其惩罚会减少过拟合
+        * 总会有解决方法
+    * 缺点
+        * 惩罚会造成欠拟合
+        * 很难校准
+
+* 集成算法（Ensemble Algorithms）
+    * 例子
+        * Boosting
+        * Bootstrapped Aggregation（Bagging）
+        * AdaBoost
+        * 层叠泛化（Stacked Generalization）（blending）
+        * 梯度推进机（Gradient Boosting Machines，GBM）
+        * 梯度提升回归树（Gradient Boosted Regression Trees，GBRT）
+        * 随机森林（Random Forest）
+    * 优点
+        * 当先最先进的预测几乎都使用了算法集成。它比使用单个模型预测出来的结果要精确的多
+    * 缺点
+        * 需要大量的维护工作
+* 决策树算法（Decision Tree Algorithm）
+    * 例子
+        * 分类和回归树（Classification and Regression Tree，CART）
+        * Iterative Dichotomiser 3（ID3）
+        * C4.5 和 C5.0（一种强大方法的两个不同版本）
+    * 优点
+        * 容易解释
+        * 非参数化
+    * 缺点
+        * 趋向过拟合
+        * 可能或陷于局部最小值中
+        * 没有在线学习
+
+* 回归（Regression）
+    * 例子
+        * 普通最小二乘回归（Ordinary Least Squares Regression，OLSR）
+        * 线性回归（Linear Regression）
+        * 逻辑回归（Logistic Regression）
+        * 逐步回归（Stepwise Regression）
+        * 多元自适应回归样条（Multivariate Adaptive Regression Splines，MARS）
+        * 本地散点平滑估计（Locally Estimated Scatterplot Smoothing，LOESS）
+    * 优点
+        * 直接、快速
+        * 知名度高
+    * 缺点
+        * 要求严格的假设
+        * 需要处理异常值
+
+* 人工神经网络（Artificial Neural Network）
+    * 例子
+        * 感知器
+        * 反向传播
+        * Hopfield 网络
+        * 径向基函数网络（Radial Basis Function Network，RBFN）
+    * 优点：
+        * 在语音、语义、视觉、各类游戏（如围棋）的任务中表现极好
+        * 算法可以快速调整，适应新的问题
+    * 缺点：
+        * 需要大量数据进行训练
+        * 训练要求很高的硬件配置
+        * 模型处于「黑箱状态」，难以理解内部机制
+        * 元参数（Metaparameter）与网络拓扑选择困难。
+
+* 深度学习（Deep Learning）
+    * 例子：
+        * 深玻耳兹曼机（Deep Boltzmann Machine，DBM）
+        * Deep Belief Networks（DBN）
+        * 卷积神经网络（CNN）
+        * Stacked Auto-Encoders
+    * 优点/缺点：见神经网络
+
+* 支持向量机（Support Vector Machine）
+    * 优点
+        * 在非线性可分问题上表现优秀
+    * 缺点
+        * 非常难以训练
+        * 很难解释
+
+* 降维算法（Dimensionality Reduction Algorithms）
+    * 例子：
+        * 主成分分析（Principal Component Analysis (PCA)）
+        * 主成分回归（Principal Component Regression (PCR)）
+        * 偏最小二乘回归（Partial Least Squares Regression (PLSR)）
+        * Sammon 映射（Sammon Mapping）
+        * 多维尺度变换（Multidimensional Scaling (MDS)）
+        * 投影寻踪（Projection Pursuit）
+        * 线性判别分析（Linear Discriminant Analysis (LDA)）
+        * 混合判别分析（Mixture Discriminant Analysis (MDA)）
+        * 二次判别分析（Quadratic Discriminant Analysis (QDA)）
+        * 灵活判别分析（Flexible Discriminant Analysis (FDA)）
+    * 优点：
+        * 可处理大规模数据集
+        * 无需在数据上进行假设
+    * 缺点：
+        * 难以搞定非线性数据
+        * 难以理解结果的意义
+
+
+* 聚类算法（Clustering Algorithms）
+    * 例子：
+        * K-均值（k-Means）
+        * K-Medians 算法
+        * Expectation–maximization（EM）
+        * 分层集群（Hierarchical Clustering）
+    * 优点：
+        * 让数据变得有意义
+    * 缺点：
+        * 结果难以解读，针对不寻常的数据组，结果可能无用
+
+* 基于实例的算法（Instance-based Algorithms）
+    * 例子：
+        * K 最近邻（k-Nearest Neighbor (kNN)）
+        * 学习向量量化（Learning Vector Quantization (LVQ)）
+        * 自组织映射（Self-Organizing Map (SOM)）
+        * 局部加权学习（Locally Weighted Learning (LWL)）
+    * 优点：
+        * 算法简单、结果易于解读
+    * 缺点：
+        * 内存使用非常高
+        * 计算成本高
+        * 不可能用于高维特征空间
+
+* 贝叶斯算法（Bayesian Algorithms）
+    * 例子：
+        * 朴素贝叶斯（Naive Bayer）
+        * 高斯朴素贝叶斯（Gaussian Naive Bayer）
+        * 多项式朴素贝叶斯（Multinomial Naive Bayer）
+        * 平均一致依赖估计器（Averaged One—Dependence Estimators（AODE））
+        * 贝叶斯网络（Bayeian Network（BN））
+    * 优点
+        * 快速、易于训练、给出了它们所需的资源能带来良好的表现
+    * 缺点
+        * 如果输入变量是相关的，则会出现问题
+
+* 关联规则学习算法（Association Rule Learning Algorithms）
+    * 例子
+        * Apriori 算法（Apriori algorithm）
+        * Eclat 算法（Eclat algorithm）
+        * FP-growth
+
+* 图模型（Graphical Models）
+    * 例子：
+        * 贝叶斯网络（Bayesian network）
+        * 马尔可夫随机域（Markov random field）
+        * 链图（Chain Graphs）
+        * 祖先图（Ancestral graph）
+    * 优点：
+        * 模型清晰，能被直观地理解
+    * 缺点：
+        * 确定其依赖的拓扑很困难，有时候也很模糊
+
+---
+[Title-6]:https://mp.weixin.qq.com/s/Xomx6Z_fP1EsnwNEegj5Cw
+[img-06-01]:img/20180527-06-01.jpg
